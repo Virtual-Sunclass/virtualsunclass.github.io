@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVPC - Virtual Sunclass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: white;
+            color: #fe8c00;
+            padding: 0.1px;
+            text-align: center
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fe8c00; 
+        }
+
+        nav a {
+            color: black;
+            padding: 5px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: white;
+        }
+
+        .hero {
+            background-image: url('https://cdn.discordapp.com/attachments/1304504920959094815/1325876279098081492/image.png?ex=677d6202&is=677c1082&hm=f52a077103ec112e05e895452758b7b73ea4550803f53299cad29204cf65ac37&');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .search-form {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1100px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-form h1 {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: center;
+        }
+
+        .search-form input, .search-form select, .search-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .about {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #fe8c00;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            background-color: #fe8c00;
+            color: black;
+        }
+        .left {
+            text-align: left;
+            border: solid 2px;
+            width: 600px;
+            height: 200px;
+        }
+        .center {
+            text-align: center;
+            
+            
+
+        }
+        .right {
+            text-align: right;
+
+        }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .search-form p {
+        text-align: center; 
+    }
+    video{
+        width: 1100px;
+    }
+
+  
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sunclass Airlines Virtual</h1>
+    </header>
+
+<nav>
+    <a href="client.html">SVPC Client</a>
+    <a href="des.html">Staffteam</a>
+    <a href="Apply.html">Apply</a>
+    <a href="resources.html">Resources</a>
+</nav>
+
+<section class="hero">
+<h2>
+    𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐮𝐧𝐜𝐥𝐚𝐬𝐬 𝐕𝐢𝐫𝐭𝐮𝐚𝐥! 𝐓𝐡𝐞 𝐕𝐢𝐫𝐭𝐮𝐚𝐥 𝐀𝐢𝐫𝐥𝐢𝐧𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐫𝐞𝐚𝐥 𝐒𝐮𝐧𝐜𝐥𝐚𝐬𝐬 𝐀𝐢𝐫𝐥𝐢𝐧𝐞𝐬.
+</h2>
+<h2>
+    𝐖𝐞 𝐨𝐟𝐟𝐞𝐫 𝐋𝐨𝐧𝐠 𝐇𝐚𝐮𝐥 𝐚𝐧𝐝 𝐒𝐡𝐨𝐫𝐭 𝐇𝐚𝐮𝐥 𝐎𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧𝐬 𝐰𝐢𝐭𝐡 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧𝐬 𝐚𝐫𝐨𝐮𝐧𝐝 𝐭𝐡𝐞 𝐰𝐨𝐫𝐥𝐝. 𝐖𝐞 𝐨𝐩𝐞𝐫𝐚𝐭𝐞 𝐥𝐨𝐭𝐬 𝐨𝐟 𝐮𝐧𝐢𝐪𝐮𝐞 𝐜𝐡𝐚𝐫𝐭𝐞𝐫 𝐟𝐥𝐢𝐠𝐡𝐭 𝐚𝐫𝐨𝐮𝐧𝐝 𝐭𝐡𝐞 𝐠𝐥𝐨𝐛𝐞 𝐚𝐬 𝐰𝐞𝐥𝐥.
+</h2>
+<h2>
+    𝐈𝐟 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐥𝐨𝐨𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐚 𝐯𝐢𝐫𝐭𝐮𝐚𝐥 𝐚𝐢𝐫𝐥𝐢𝐧𝐞 𝐰𝐢𝐭𝐡 𝐦𝐚𝐧𝐲 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧𝐬, 𝐜𝐡𝐚𝐫𝐭𝐞𝐫 𝐟𝐥𝐢𝐠𝐡𝐭𝐬 𝐚𝐧𝐝 𝐡𝐢𝐠𝐡 𝐫𝐞𝐚𝐥𝐢𝐬𝐦, 𝐰𝐞 𝐚𝐫𝐞 𝐭𝐡𝐞 𝐩𝐞𝐫𝐟𝐞𝐜𝐭 𝐚𝐢𝐫𝐥𝐢𝐧𝐞 𝐚𝐧𝐝 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐦𝐨𝐫𝐞 𝐭𝐡𝐚𝐧 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐣𝐨𝐢𝐧 𝐮𝐬.
+</h2>    
+</section>
+
+<section id="search" class="search-form">
+    <iframe width="1100" height="650"
+    src="https://www.youtube.com/embed/MlELbMdP8WE?si=8KcT9N77wSjLCMVu" frameborder="0">
+    </iframe>
+
+    <h1>We are a Virtual Airline that offers... </h1>
+    <div class="grid">
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3>Community</h3>
+          <p>We offer a Community for our pilots where they can talk with other pilots and discuss.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📡</div>
+          <h3>SVPC</h3>
+          <p>We offer a Pilot Client where you as a pilot can track your flight.</p>
+          <p>Not available yet</p>
+          <p><a href="client.html">More info here</a></p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3>Discord</h3>
+          <p>We offer a Discord server where can get roles and chat with other pilots</p>
+          <p>Link: <a href="https://discord.gg/NDPq4Pp6">Discord</a> </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📥</div>
+          <h3>Resources</h3>
+          <p>We offer Resources such as liveries and scenerys for our pilots</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌍</div>
+          <h3>Charts</h3>
+          <p>We offer charts on our Airport Hubs for our pilots</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📨</div>
+          <h3>SOP</h3>
+          <p>We offer our own Standard Operation Procedures (SOP) for our pilots</p>
+        </div>
+    </div class="join">
+    <p>&#8595; Press the button to join &#8595;</p>
+    </div>
+        <button type="submit"><a href="Apply.html">Apply</a></button>
+    </form>
+</section>
+
+
+
+
+
+<footer>
+    <p>&copy; 2025 Sunclass Airlines Virtual. All rights reserved. email: vsunclassairlines@gmail.com</p>
+</footer>
+
+</body>
+</html>
