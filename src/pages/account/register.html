@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Virtual Sunclass</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://cdn.discordapp.com/attachments/1224095158900101152/1325837846384218122/awd_1_1_1.png?ex=677d3e37&is=677becb7&hm=3f7310a2b4114b350b3e70b55dda277177af1b349b9f087e7f0f622ea4ee536a&);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fe8c00;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px 30px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #fe8c00;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+        .error-message {
+            color: #ff6f61;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 15px;
+            color: #fe8c00;
+            text-decoration: underline;
+        }
+        select{
+            max-width: 5000px;
+            width: 350px;
+            border-style: solid 3px;
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="Home">
+            <a href="" style="color: #fe8c00;">Home</a>
+       </div>
+        <h1>Register</h1>
+
+        <div id="register-error-message" class="error-message"></div>
+        <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="select-country">Country</label>
+            <select name="country" id="select-country">
+                <option value="select">Select...</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Norway">Norway</option>
+                <option value="Finland">Finland</option>
+            </select>
+            <label for="hubs">Hub</label>
+            <select name="hubs" id="hubs">
+                <option value="select">Select...</option>
+                <option value="stockholm">ESSA/ARN - Stockholm Arlanda</option>
+                <option value="oslo">ENGM/OSL - Oslo Gardermoen</option>
+                <option value="malmo">ESMS/MMX - Malmö Sturup</option>
+                <option value="helsinki">EFHK/HEL - Helsinki Vantaa</option>
+                <option value="gothenburg">ESGG/GOT - Gothenburg Landvetter</option>
+                <option value="copenhagen">EKCH/CPH - Copenhagen Kastrup</option>
+                <option value="billund">EKBI/BLL - Billund Airport</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="vatsim">VATSIM ID (optional)</label>
+            <input type="text" id="vatsim" placeholder="VATSIM ID (optional)">
+        </div>
+        <div class="form-group">
+            <label for="ivao">VATSIM ID (optional)</label>
+            <input type="text" id="ivao" placeholder="IVAO ID (optional)">
+        </div>
+        <button onclick="submitRegisterForm()">Register</button>
+        <div class="link">
+            <a href="login.html" style="color: #fe8c00;">Already have an account?</a>
+           
+        </div>
+
+    </div>
+
+    <script>
+        function submitRegisterForm() {
+            const email = document.getElementById("register-email").value;
+            const password = document.getElementById("register-password").value;
+            const errorMessage = document.getElementById("register-error-message");
+
+            if (!email || !password) {
+                errorMessage.innerText = "All fields are required.";
+                return;
+            }
+
+            errorMessage.innerText = "";
+            alert(`Account created for ${email}`);
+        }
+    </script>
+</body>
+</html>
